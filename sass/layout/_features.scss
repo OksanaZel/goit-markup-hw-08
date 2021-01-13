@@ -1,0 +1,41 @@
+.features-list {
+  display: flex;
+}
+
+.features-list__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-list__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-list__title {
+  @include font(700, 14px, 1.14);
+
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.features-list__description {
+  @include font(400, 14px, 1.72);
+
+  color: $secondary-text-color;
+}
