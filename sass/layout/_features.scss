@@ -1,13 +1,5 @@
-.features-list {
-  display: flex;
-}
-
 .features-list__item {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  width: 450px;
 }
 
 .features-list__icon-wrapper {
@@ -30,6 +22,7 @@
 .features-list__title {
   @include font(700, 14px, 1.14);
 
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -38,4 +31,65 @@
   @include font(400, 14px, 1.72);
 
   color: $secondary-text-color;
+}
+
+@media screen and (max-width: 767px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-list__item {
+    width: 354px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .features-list__title {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .features-list__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .features-list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .features-list {
+    display: flex;
+  }
+
+  .features-list__item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
