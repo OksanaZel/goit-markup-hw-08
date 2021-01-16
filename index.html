@@ -61,7 +61,7 @@
             </div>
             </section>
         <!-- Преимущества -->
-        <!-- <section class="features section">
+        <section class="features section">
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="features-list">
@@ -107,44 +107,67 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--Чем мы занимаемся -->
-        <!-- <section class="work section">
+        <section class="work section">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="work-list">
                     <li class="work-list__item list">
                         <div class="work-list__wrapper">
-                            <img class="work-list__img" src="./img/img-1.jpg" alt="Создаем структуру сайта"
-                                width="370" height="294">
+                            <picture class="work-list__picture">
+                                <source srcset="./img/work/desktop-img-1.webp 1x, ./img/work/desktop-img-1@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./img/work/desktop-img-1.jpg 1x, ./img/work/desktop-img-1@2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="work-list__img" src="./img/work/desktop-img-1.jpg" alt="Создаем структуру сайта" width="370" height="294">
+                            </picture>
                             <p class="work-list__description">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work-list__item list">
                         <div class="work-list__wrapper">
-                            <img class="work-list__img" src="./img/img-2.jpg" alt="Проверяем адаптивность сайта"
-                                width="370" height="294">
+                                <picture class="work-list__picture">
+                                    <source srcset="./img/work/desktop-img-2.webp 1x, ./img/work/desktop-img-2@2x.webp 2x" media="(min-width: 1200px)"
+                                        type="image/webp">
+                                    <source srcset="./img/work/desktop-img-2.jpg 1x, ./img/work/desktop-img-2@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img class="work-list__img" src="./img/work/desktop-img-2.jpg" alt="Проверяем адаптивность сайта" width="370"
+                                            height="294">
+                            </picture>
                             <p class="work-list__description">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work-list__item list">
                         <div class="work-list__wrapper">
-                            <img class="work-list__img" src="./img/img-3.jpg" alt="Подбираем цветовую гамму"
-                                width="370" height="294">
+                            <picture class="work-list__picture">
+                                <source srcset="./img/work/desktop-img-3.webp 1x, ./img/work/desktop-img-3@2x.webp 2x" media="(min-width: 1200px)"
+                                    type="image/webp">
+                                <source srcset="./img/work/desktop-img-3.jpg 1x, ./img/work/desktop-img-3@2x.jpg 2x" media="(min-width: 1200px)">
+                                <img class="work-list__img" src="./img/work/desktop-img-3.jpg" alt="Подбираем цветовую гамму" width="370" height="294">
+                            </picture>
                             <p class="work-list__description">Дизайнерские решения</p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--Наша команда -->
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item list">
-                        <img class="team-list__img" src="./img/product-designer.jpg" alt="Игорь Демьяненко Product Designer" width="270"
-                            height="260">
+                        <picture class="team-list__picture">
+                            <source srcset="../img/team/desktop-card-1.webp 1x, ./img/team/desktop-card-1@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+                            <source srcset="../img/team/desktop-card-1.jpg 1x, ./img/team/desktop-card-1@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="../img/team/tablet-card-1.webp 1x, ./img/team/tablet-card-1@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="../img/team/tablet-card-1.jpg 1x, ./img/team/tablet-card-1@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="../img/team/mobile-card-1.webp 1x, ./img/team/mobile-card-1@2x.webp 2x" 
+                            media="(min-width: 320px)" type="image/webp">
+                            <source srcset="../img/team/mobile-card-1.jpg 1x, ./img/team/mobile-card-1@2x.jpg 2x" 
+                            media="(min-width: 320px)">
+                            <img class="team-list__img" src="./img/team/mobile-card-1.jpg" alt="Игорь Демьяненко Product Designer">
+                        </picture>
                             <div class="team-card">
                                 <h3 class="team-card__title">Игорь Демьяненко</h3>
                                 <p class="team-card__description">Product Designer</p>
@@ -154,7 +177,8 @@
                                             <svg class="social-list__icon">
                                                 <use href="./img/sprite.svg#instagram"></use>
                                             </svg>
-                                        </a></li>
+                                        </a>
+                                    </li>
                                     <li class="social-list__item">
                                         <a class="social-list__link" href="">
                                             <svg class="social-list__icon">
@@ -177,8 +201,16 @@
                             </div>
                     </li>
                     <li class="team-list__item list">
-                        <img class="team-list__img" src="./img/frontend-developer.jpg" alt="Ольга Репина Frontend Developer" width="270"
-                            height="260">
+                        <picture class="team-list__picture">
+                            <source srcset="./img/team/desktop-card-2.webp 1x, ./img/team/desktop-card-2@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+                            <source srcset="./img/team/desktop-card-2.jpg 1x, ./img/team/desktop-card-2@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/team/tablet-card-2.webp 1x, ./img/team/tablet-card-2@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/team/tablet-card-2.jpg 1x, ./img/team/tablet-card-2@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./img/team/mobile-card-2.webp 1x, ./img/team/mobile-card-2@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
+                            <source srcset="./img/team/mobile-card-2.jpg 1x, ./img/team/mobile-card-2@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team-list__img" src="./img/team/mobile-card-2.jpg" alt="Ольга Репина Frontend Developer">
+                        </picture>
                             <div class="team-card">
                                 <h3 class="team-card__title">Ольга Репина</h3>
                                 <p class="team-card__description">Frontend Developer</p>
@@ -211,7 +243,17 @@
                             </div>
                     </li>
                     <li class="team-list__item list">
-                        <img class="team-list__img" src="./img/marketing.jpg" alt="Николай Тарасов Marketing" width="270" height="260">
+                        <picture class="team-list__picture">
+                            <source srcset="./img/team/desktop-card-3.webp 1x, ./img/team/desktop-card-3@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+                            <source srcset="./img/team/desktop-card-3.jpg 1x, ./img/team/desctop-card-3@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/team/tablet-card-3.webp 1x, ./img/team/tablet-card-3@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./img/team/tablet-card-3.jpg 1x, ./img/team/tablet-card-3@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./img/team/mobile-card-3.webp 1x, ./img/team/mobile-card-3@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
+                            <source srcset="./img/team/mobile-card-3.jpg 1x, ./img/team/mobile-card-3@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team-list__img" src="./img/team/mobile-card-3.jpg" alt="Николай Тарасов Marketing">
+                        </picture>
                             <div class="team-card">
                                 <h3 class="team-card__title">Николай Тарасов</h3>
                                 <p class="team-card__description">Marketing</p>
@@ -244,8 +286,17 @@
                             </div>
                     </li>
                     <li class="team-list__item list">
-                        <img class="team-list__img" src="./img/ui-designer.jpg" alt="Михаил Ермаков UI Designer" width="270"
-                            height="260">
+                        <picture class="team-list__picture">
+                            <source srcset="./img/team/desktop-card-4.webp 1x, ./img/team/desktop-card-4@2x.webp 2x" media="(min-width: 1200px)"
+                                type="image/webp">
+                            <source srcset="./img/team/desktop-card-4.jpg 1x, ./img/team/desktop-card-4@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./img/team/tablet-card-4.webp 1x, ./img/team/tablet-card-4@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./img/team/tablet-card-4.jpg 1x, ./img/team/tablet-card-4@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./img/team/mobile-card-4.webp 1x, ./img/team/mobile-card-4@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
+                            <source srcset="./img/team/mobile-card-4.jpg 1x, ./img/team/mobile-card-4@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="team-list__img" src="./img/team/mobile-card-4.jpg" alt="Михаил Ермаков UI Designer">
+                        </picture>
                             <div class="team-card">
                                 <h3 class="team-card__title">Михаил Ермаков</h3>
                                 <p class="team-card__description">UI Designer</p>
@@ -279,9 +330,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Постоянные клиенты-->
-        <!-- <section class="clients section">
+        <section class="clients section">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="clients-list list">
@@ -326,9 +377,9 @@
                 </ul>
             </div>
         </section>
-    </main> -->
+    </main>
     <!-- Футер -->
-    <!-- <footer class="footer section">
+    <footer class="footer section">
             <div class="container">
                 <div class="footer-contact">
                     <a class="logo logo_dark-theme link" href="./index.html" aria-label="логотип сайта" lang="en">
@@ -393,7 +444,7 @@
                         </form>
                 </div>
             </div>
-    </footer> -->
+    </footer>
 
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">

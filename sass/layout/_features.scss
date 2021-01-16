@@ -1,5 +1,10 @@
 .features-list__item {
-  width: 450px;
+  max-width: 450px;
+}
+
+.features-list__icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list__icon-wrapper {
@@ -12,11 +17,6 @@
 
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.features-list__icon {
-  width: 70px;
-  height: 70px;
 }
 
 .features-list__title {
@@ -33,32 +33,20 @@
   color: $secondary-text-color;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .features-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-
   .features-list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .features-list__item {
-    width: 354px;
-
-    &:not(:nth-child(2n)) {
-      margin-right: 30px;
-    }
-
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
-    }
+    max-width: 354px;
   }
 
   .features-list__title {
@@ -66,7 +54,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list__item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
@@ -77,16 +65,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-
   .features-list {
     display: flex;
   }
 
   .features-list__item {
-    width: 270px;
+    max-width: 270px;
 
     &:not(:last-child) {
       margin-right: 30px;

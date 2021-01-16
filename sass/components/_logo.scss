@@ -1,6 +1,7 @@
 .logo {
   font-family: $secondary-font;
   @include font(700, 26px, 1.19);
+  text-align: center;
 
   &_light-theme {
     color: #000000;
