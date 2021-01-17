@@ -1,11 +1,7 @@
 .clients-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-}
-
-.clients .title {
-  margin-bottom: 30px;
+  justify-content: center;
 }
 
 .clients-list__link {
@@ -70,10 +66,6 @@
 @media screen and (min-width: 1200px) {
   .clients-list__link {
     width: 170px;
-  }
-
-  .clients .title {
-    margin-bottom: 50px;
   }
 
   .clients-list__item:not(:last-child) {
