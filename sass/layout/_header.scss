@@ -1,5 +1,7 @@
 .header {
   position: relative;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
@@ -21,6 +23,8 @@
 
   width: 480px;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 
   &.is-open {
@@ -47,6 +51,79 @@
 
   &.is-open .icon-menu {
     display: none;
+  }
+}
+
+.navigation-list__wrapper {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.contact-list__wrapper {
+  text-align: center;
+}
+
+.navigation-list__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.navigation-list__link {
+  // padding-bottom: 12px;
+  @include font(500, 18px, 1.17);
+
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+
+  transition: color $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contact-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contact-list__link {
+  @include font(500, 18px, 1.17);
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+  transition: color $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contact-list__icon {
+  margin-right: 10px;
+  fill: #757575;
+
+  transition: fill $time-function;
+
+  .contact-list__link:hover &,
+  .contact-list__link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.navigation-list__link--current {
+  color: $accent-color;
+  // border-bottom: 4px solid $accent-color;
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
   }
 }
 
