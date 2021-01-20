@@ -141,10 +141,18 @@
     text-align: center;
   }
 
+  .contact-list__wrapper {
+    text-align: center;
+  }
+
   .navigation-list__item {
     &:not(:last-child) {
       margin-bottom: 40px;
     }
+  }
+
+  .contact-list__link {
+    justify-content: center;
   }
 
   .navigation-list__link--current {
@@ -155,10 +163,6 @@
     &:not(:last-child) {
       margin-bottom: 16px;
     }
-  }
-
-  .contact-list__link {
-    justify-content: center;
   }
 }
 
@@ -197,6 +201,45 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
+    @include font(500, 14px, 1.14);
+  }
+
+  .contact-list__link {
+    @include font(500, 12px, 1.17);
+  }
+
+  .contact-list__icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    & .logo {
+      margin-right: 93px;
+    }
+  }
+
+  .contact-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-list__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .contact-list__link {
     @include font(500, 14px, 1.14);
   }
 }
