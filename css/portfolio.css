@@ -331,20 +331,17 @@ img {
     margin-bottom: 60px;
     text-align: center;
   }
-  .contact-list__wrapper {
-    text-align: center;
-  }
   .navigation-list__item:not(:last-child) {
     margin-bottom: 40px;
-  }
-  .contact-list__link {
-    justify-content: center;
   }
   .navigation-list__link--current {
     padding-bottom: 12px;
   }
   .contact-list__item:not(:last-child) {
     margin-bottom: 16px;
+  }
+  .contact-list__link {
+    justify-content: center;
   }
 }
 
